@@ -12,18 +12,11 @@ public class Main {
 		if (b < a) {
 			System.out.println("Please enter b > a");
 		} else if (b > a) {
-			int n = b - a;
-			int array[] = new int[n];
-			for (int i = 0; i < n; i++) {
-				array[i] = i + a;
-				 if ((i % 3 == 0)) {
-				 array[i] = i / 3;
-				 }
-			}
-			for (int i = 0; i < n; i++) {
-				System.out.print(array[i] + " ");
+			for (int i = a; i <= b; i++) {
+				if (i % 3 == 0) {
+					System.out.println(i);
+				}
 			}
 		}
 	}
-
 }
